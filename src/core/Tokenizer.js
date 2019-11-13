@@ -53,7 +53,7 @@ export default class Tokenizer {
 
     createWordRegex(specialChars = []) {
         return new RegExp(
-            `^([\\p{Unified_Ideograph}\\p{Alphabetic}\\p{Mark}\\p{Decimal_Number}\\p{Connector_Punctuation}\\p{Join_Control}${specialChars.join("")}]+)`,
+            `^([\\p{Alphabetic}\\p{Mark}\\p{Decimal_Number}\\p{Connector_Punctuation}\\p{Join_Control}${specialChars.join("")}]+)`,
             'u'
         );
     }
