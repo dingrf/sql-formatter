@@ -1,6 +1,7 @@
 # SQL Formatter [![NPM version](https://img.shields.io/npm/v/sql-formatter.svg)](https://npmjs.com/package/sql-formatter) [![Build Status](https://travis-ci.org/zeroturnaround/sql-formatter.svg?branch=master)](https://travis-ci.org/zeroturnaround/sql-formatter) [![Coverage Status](https://coveralls.io/repos/github/zeroturnaround/sql-formatter/badge.svg?branch=master)](https://coveralls.io/github/zeroturnaround/sql-formatter?branch=master)
 
-**SQL Formatter** is a JavaScript library for pretty-printing SQL queries.
+**SQL Formatter Unicode** is a JavaScript library for pretty-printing SQL queries.
+This project is forked from [sql-formatter](https://github.com/zeroturnaround/sql-formatter), and added a fix for unicode issue.
 It started as a port of a [PHP Library][], but has since considerably diverged.
 It supports [Standard SQL][], [Couchbase N1QL][], [IBM DB2][] and [Oracle PL/SQL][]  dialects.
 
@@ -11,13 +12,13 @@ It supports [Standard SQL][], [Couchbase N1QL][], [IBM DB2][] and [Oracle PL/SQL
 Get the latest version from NPM:
 
 ```
-npm install sql-formatter
+npm install sql-formatter-unicode
 ```
 
 ## Usage
 
 ```js
-import sqlFormatter from "sql-formatter";
+import sqlFormatter from "sql-formatter-unicode";
 
 console.log(sqlFormatter.format("SELECT * FROM table1"));
 ```
