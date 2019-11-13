@@ -465,4 +465,17 @@ export default function behavesLikeSqlFormatter(language) {
             "  Table2;"
         );
     });
+
+    it('formats unicode correctly', function() {
+        const result = format(
+            'SELECT test, тест FROM table;'
+        );
+        expect(result).toBe(
+            'SELECT\n' +
+            '  中文,\n' +
+            '  тест\n' +
+            'FROM\n' +
+            '  table;'
+        );
+    });
 }
