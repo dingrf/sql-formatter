@@ -1,6 +1,6 @@
 {
   "name": "sql-formatter-unicode",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "Fork from sql-formatter",
   "license": "MIT",
   "main": "lib/sqlFormatter.js",
