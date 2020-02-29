@@ -52,11 +52,7 @@ export default class Tokenizer {
     }
 
     createWordRegex(specialChars = []) {
-        // unicode support, refer to http://zh.javascript.info/regexp-unicode-properties
-        return new RegExp(
-            `^([\\p{Alphabetic}\\p{Mark}\\p{Decimal_Number}\\p{Connector_Punctuation}\\p{Join_Control}${specialChars.join("")}]+)`,
-            'u'
-        );
+        return new RegExp(`^([\\w\\u4e00-\\u9fa5${specialChars.join("")}]+)`);
     }
 
     createStringRegex(stringTypes) {

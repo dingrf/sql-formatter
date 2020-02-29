@@ -4,6 +4,7 @@
         "jest": true
     },
     "rules":{
-        "linebreak-style": ["off", "windows"]
+        "linebreak-style": ["off", "windows"],
+        "max-len" : ["error", {"code": 200}]
     }
 }
