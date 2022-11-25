@@ -5,7 +5,7 @@ This project is forked from [sql-formatter](https://github.com/zeroturnaround/sq
 It started as a port of a [PHP Library][], but has since considerably diverged.
 It supports [Standard SQL][], [Couchbase N1QL][], [IBM DB2][] and [Oracle PL/SQL][]  dialects.
 
-&rarr; [Try the demo.](https://zeroturnaround.github.io/sql-formatter/)
+&rarr; [Try the demo.](https://zeroturnaround.github.io/sql-formatter/)  
 
 ## Install
 
